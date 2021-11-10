@@ -3,14 +3,14 @@ const employee = {
     streetAddress: '11 Broadway',
 }
 
-function updateEmployeeWithKeyAndValue(object, key, value) {
+function updateEmployeeWithKeyAndValue(employee, key, value) {
     const newEmployee = {...employee};
     newEmployee[key] = value;
     return newEmployee;
 };
 
 
-function destructivelyUpdateEmployeeWithKeyAndValue(object, key, value) {
+function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
     employee[key] = value;
     return employee;
 };
